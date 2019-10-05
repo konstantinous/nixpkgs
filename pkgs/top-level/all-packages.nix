@@ -12356,6 +12356,21 @@ in
 
     accounts-qt = callPackage ../development/libraries/accounts-qt { };
 
+    signond = callPackage ../development/libraries/signond {
+      extensions = [];
+    };
+
+    signond-with-extensions = callPackage ../development/libraries/signond {
+      extensions = [ signondExtensions.oauth2 ];
+    };
+
+    signondExtensions = {
+      oauth2 = libsForQt5.callPackage ../development/libraries/signond/extensions/oauth2.nix { };
+    };
+
+
+    signon-ui = callPackage ../development/libraries/signon-ui { };
+
     alkimia = callPackage ../development/libraries/alkimia { };
 
     fcitx-qt5 = callPackage ../tools/inputmethods/fcitx/fcitx-qt5.nix { };
@@ -18075,6 +18090,8 @@ in
   khard = callPackage ../applications/misc/khard { };
 
   kid3 = libsForQt5.callPackage ../applications/audio/kid3 { };
+
+  kio-gdrive = kdeApplications.callPackage ../applications/misc/kio-gdrive { };
 
   kile = libsForQt5.callPackage ../applications/editors/kile { };
 

@@ -786,6 +786,7 @@
       name = "kio-extras-18.12.3.tar.xz";
     };
   };
+
   kirigami-gallery = {
     version = "18.12.3";
     src = fetchurl {
