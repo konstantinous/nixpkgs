@@ -794,6 +794,7 @@
       name = "kipi-plugins-19.08.1.tar.xz";
     };
   };
+
   kirigami-gallery = {
     version = "19.08.1";
     src = fetchurl {
