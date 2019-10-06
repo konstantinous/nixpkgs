@@ -6,7 +6,7 @@
   pkgconfig,
   qtbase,
   qmake,
-  signond-with-extensions,
+  signond,
   qtwebkit-plugins,
   qtwebkit,
   qtwebengine,
@@ -39,7 +39,7 @@ stdenv.mkDerivation rec {
 
   buildInputs = [
     qtbase
-    signond-with-extensions
+    signond
     qtwebkit-plugins
     qtwebkit
     accounts-qt

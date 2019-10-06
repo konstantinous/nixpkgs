@@ -5,7 +5,8 @@
   kaccounts-integration,
   intltool,
   accounts-qt,
-  signond-with-extensions,
+  signond,
+  signon-plugin-oauth2,
   libaccounts-glib,
   kconfigwidgets,
   kiconthemes,
@@ -27,7 +28,8 @@ mkDerivation {
   buildInputs = [
     kaccounts-integration
     accounts-qt
-    signond-with-extensions
+    signond
+    signon-plugin-oauth2
     libaccounts-glib
     kconfigwidgets
     kiconthemes

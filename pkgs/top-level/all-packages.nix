@@ -13212,18 +13212,9 @@ in
 
     accounts-qt = callPackage ../development/libraries/accounts-qt { };
 
-    signond = callPackage ../development/libraries/signond {
-      extensions = [];
-    };
+    signond = callPackage ../development/libraries/signond { };
 
-    signond-with-extensions = callPackage ../development/libraries/signond {
-      extensions = [ signondExtensions.oauth2 ];
-    };
-
-    signondExtensions = {
-      oauth2 = libsForQt5.callPackage ../development/libraries/signond/extensions/oauth2.nix { };
-    };
-
+    signon-plugin-oauth2 = libsForQt5.callPackage ../development/libraries/signond/extensions/oauth2.nix { };
 
     signon-ui = callPackage ../development/libraries/signon-ui { };
 
