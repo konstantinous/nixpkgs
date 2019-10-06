@@ -7,6 +7,7 @@
   shared-mime-info,
   libkgapi,
   kaccounts-integration,
+  kaccounts-providers,
   intltool,
   kcalcore,
   kcontacts,
@@ -33,6 +34,7 @@ stdenv.mkDerivation rec {
   buildInputs = [
     libkgapi
     kaccounts-integration
+    kaccounts-providers
     intltool
     kcalcore
     kcontacts

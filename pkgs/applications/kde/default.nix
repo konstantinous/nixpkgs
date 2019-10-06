@@ -150,6 +150,7 @@ let
       ksystemlog = callPackage ./ksystemlog.nix {};
       ktnef = callPackage ./ktnef.nix {};
       ktouch = callPackage ./ktouch.nix {};
+      ktp-accounts-kcm = callPackage ./ktp-accounts-kcm.nix {};
       kwalletmanager = callPackage ./kwalletmanager.nix {};
       libgravatar = callPackage ./libgravatar.nix {};
       libkcddb = callPackage ./libkcddb.nix {};
@@ -175,6 +176,7 @@ let
       pim-sieve-editor = callPackage ./pim-sieve-editor.nix {};
       print-manager = callPackage ./print-manager.nix {};
       spectacle = callPackage ./spectacle.nix {};
+      signon-kwallet-extension = callPackage ./signon-kwallet-extension.nix {};
       yakuake = callPackage ./yakuake.nix {};
       #signon-kwallet-extension = callPackage ./signon-kwallet-extension.nix {};
       # Okteta was removed from kde applications and will now be released independently

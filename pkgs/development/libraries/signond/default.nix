@@ -6,15 +6,12 @@
   qttools,
   qmake,
   doxygen,
-  graphviz,
-  makeWrapper,
-  symlinkJoin,
-  signondExtensions,
-  extensions
+  graphviz
 }:
 
-let
-unwrapped = stdenv.mkDerivation rec {
+#let
+#unwrapped = stdenv.mkDerivation rec {
+stdenv.mkDerivation rec {
 
   pname = "signond";
   version = "8.60";
@@ -37,6 +34,8 @@ unwrapped = stdenv.mkDerivation rec {
     graphviz
   ];
 
+  SIGNOND_PLUGINS_DIR = "/lib/signon";
+
   preConfigure = ''
     # don't install example plugin
     sed -e "/example/d" -i src/plugins/plugins.pro
@@ -57,10 +56,10 @@ unwrapped = stdenv.mkDerivation rec {
       email = "konstantin@konstantsky.pw";
     } ];
   };
-};
+}
 
-in if extensions == [] then unwrapped
-  else import ./wrapper.nix {
-    inherit stdenv makeWrapper symlinkJoin signondExtensions extensions;
-    signond = unwrapped;
-  }
+#in if extensions == [] then unwrapped
+#  else import ./wrapper.nix {
+#    inherit stdenv makeWrapper symlinkJoin signondExtensions extensions;
+#    signond = unwrapped;
+#  }
