@@ -21,7 +21,6 @@ stdenv.mkDerivation rec {
   };
 
   PKG_CONFIG_PATH="${signond}/lib/pkgconfig";
-  SIGNOND_PLUGINS_DIR="$out/lib/signon";
 
   preConfigure = ''
       # Do not install tests and example
@@ -45,8 +44,6 @@ stdenv.mkDerivation rec {
   ];
 
   postFixup = ''
-    find . -name  liboauth2plugin.so
-    ls -lh src/lib/signon/
     install -D ./src/lib/signon/liboauth2plugin.so $out/lib/signon/liboauth2plugin.so
   '';
 

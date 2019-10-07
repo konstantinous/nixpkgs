@@ -34,8 +34,6 @@ stdenv.mkDerivation rec {
     graphviz
   ];
 
-  SIGNOND_PLUGINS_DIR = "/lib/signon";
-
   preConfigure = ''
     # don't install example plugin
     sed -e "/example/d" -i src/plugins/plugins.pro
