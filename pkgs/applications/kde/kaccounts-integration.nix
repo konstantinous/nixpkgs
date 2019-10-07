@@ -30,7 +30,7 @@ mkDerivation {
   ];
 
   meta = with stdenv.lib; {
-    description = "Small system to administer web accounts for the sites and services across the KDE desktop.";
+    description = "Small system to administer web accounts for the sites and services across the KDE desktop";
     homepage = https://github.com/KDE/kaccounts-integration;
     platforms = platforms.linux;
 

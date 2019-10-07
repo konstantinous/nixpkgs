@@ -40,7 +40,7 @@ mkDerivation {
   ];
 
   meta = with stdenv.lib; {
-    description = "KDE providers for integration with online services and sites.";
+    description = "KDE providers for integration with online services and sites";
     homepage = https://github.com/KDE/kaccounts-providers;
     platforms = platforms.linux;
 

@@ -42,7 +42,7 @@ stdenv.mkDerivation rec {
   ];
 
   meta = with stdenv.lib; {
-    description = "A KIO slave that enables KIO-aware applications to access and edit Google Drive files on the cloud.";
+    description = "A KIO slave that enables KIO-aware applications to access and edit Google Drive files on the cloud";
     homepage = https://community.kde.org/KIO_GDrive;
     platforms = platforms.linux;
 

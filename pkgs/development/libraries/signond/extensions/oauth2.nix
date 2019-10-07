@@ -50,7 +50,7 @@ stdenv.mkDerivation rec {
   outputs = [ "out" "dev" ];
 
   meta = with stdenv.lib; {
-    description = "This plugin for the Accounts-SSO SignOn daemon handles the OAuth 1.0 and 2.0 authentication protocols.";
+    description = "This plugin for the Accounts-SSO SignOn daemon handles the OAuth 1.0 and 2.0 authentication protocols";
     homepage = https://gitlab.com/accounts-sso/signon-plugin-oauth2;
     platforms = platforms.linux;
 
