@@ -39,10 +39,7 @@ mkDerivation {
       lgpl2.1
     ];
 
-    maintainers = [ {
-      name = "Konstantin Khokhlov";
-      email = "konstantin@konstantsky.pw";
-    } ];
+    maintainers = [ maintainers.konstantsky ];
   };
 
 }

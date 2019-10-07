@@ -9,8 +9,6 @@
   graphviz
 }:
 
-#let
-#unwrapped = stdenv.mkDerivation rec {
 stdenv.mkDerivation rec {
 
   pname = "signond";
@@ -49,15 +47,6 @@ stdenv.mkDerivation rec {
       lgpl21
     ];
 
-    maintainers = [ {
-      name = "Konstantin Khokhlov";
-      email = "konstantin@konstantsky.pw";
-    } ];
+    maintainers = [ maintainers.konstantsky ];
   };
 }
-
-#in if extensions == [] then unwrapped
-#  else import ./wrapper.nix {
-#    inherit stdenv makeWrapper symlinkJoin signondExtensions extensions;
-#    signond = unwrapped;
-#  }

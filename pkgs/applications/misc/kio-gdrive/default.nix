@@ -51,10 +51,7 @@ stdenv.mkDerivation rec {
       gpl3
     ];
 
-    maintainers = [ {
-      name = "Konstantin Khokhlov";
-      email = "konstantin@konstantsky.pw";
-    } ];
+    maintainers = [ maintainers.konstantsky ];
   };
 
 }

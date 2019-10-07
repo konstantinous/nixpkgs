@@ -47,11 +47,7 @@ mkDerivation {
     license = with licenses; [
       gpl2
     ];
-
-    maintainers = [ {
-      name = "Konstantin Khokhlov";
-      email = "konstantin@konstantsky.pw";
-    } ];
+    maintainers = [ maintainers.konstantsky ];
   };
 
 }
