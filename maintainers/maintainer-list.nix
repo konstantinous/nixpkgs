@@ -3423,7 +3423,7 @@
   };
   konstantsky = {
     email = "konstantin@konstantsky.pw";
-    github = "konstantinious";
+    github = "konstantinous";
     name = "Konstantin Khokhlov";
   };
   koral = {
