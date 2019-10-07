@@ -150,7 +150,6 @@ let
       ksystemlog = callPackage ./ksystemlog.nix {};
       ktnef = callPackage ./ktnef.nix {};
       ktouch = callPackage ./ktouch.nix {};
-      ktp-accounts-kcm = callPackage ./ktp-accounts-kcm.nix {};
       kwalletmanager = callPackage ./kwalletmanager.nix {};
       libgravatar = callPackage ./libgravatar.nix {};
       libkcddb = callPackage ./libkcddb.nix {};
