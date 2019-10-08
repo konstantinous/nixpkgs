@@ -13600,6 +13600,12 @@ in
 
   shhopt = callPackage ../development/libraries/shhopt { };
 
+  signond = libsForQt5.callPackage ../development/libraries/signond { };
+
+  signon-ui = libsForQt5.callPackage ../development/libraries/signon-ui { };
+
+  signon-plugin-oauth2 = libsForQt5.callPackage ../development/libraries/signond/extensions/oauth2.nix { };
+
   graphite2 = callPackage ../development/libraries/silgraphite/graphite2.nix {};
 
   simavr = callPackage ../development/tools/simavr {
@@ -19163,6 +19169,8 @@ in
   khard = callPackage ../applications/misc/khard { };
 
   kid3 = libsForQt5.callPackage ../applications/audio/kid3 { };
+
+  kio-gdrive = kdeApplications.callPackage ../applications/misc/kio-gdrive { };
 
   kile = libsForQt5.callPackage ../applications/editors/kile { };
 
